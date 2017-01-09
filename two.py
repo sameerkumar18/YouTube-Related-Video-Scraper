@@ -1,4 +1,3 @@
-#import pafy
 from bs4 import BeautifulSoup
 import requests
 import urllib
@@ -8,13 +7,9 @@ import pafy
 
 url = "https://www.youtube.com/watch?v=7Qp5vcuMIlk"
 base1 = "https://www.youtube.com"
-#save file
-#file = open("yt.txt",'w')
-#maybe
-#urllib.urlretrieve(url,"test.txt")
+
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 page = requests.get(url,headers=headers)
-#print page.text
 
 
 vids = []
@@ -26,16 +21,13 @@ tag = souped.find_all(id="watch-related")
 all_links = {}
 count = 0
 for tags in tag:
-        #link = tags.find_all('a', attrs='href')
-        # if tag.has_attr('href'):
-        #         print "The link is %s" %(tag.attrs['href'])
+        
 
         link = tags.find_all(class_="video-list-item")[count+1].find(class_='content-wrapper').find_all('a')[count].get('href')
         print link
         new_link = base1 + link
         all_links = {count:copy.copy(str(new_link))}
 
-        #or all_links [count] = link
 
         count = count + 1
 print ""
