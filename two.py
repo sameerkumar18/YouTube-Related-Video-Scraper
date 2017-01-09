@@ -23,10 +23,6 @@ souped = BeautifulSoup(page.text, "lxml")
 #works tag = souped.find_all(class_="video-list-item")[0].find(class_='content-wrapper').find_all('a')[0]
 #tag = souped.find_all(id="watch-related")[0].find_all(class_="video-list-item")[0].find(class_='content-wrapper').find_all('a')
 tag = souped.find_all(id="watch-related")
-#print tag
-#this works .find('a', attrs='href')
-#tag = souped.find_all('div')[0].find_all(class_="video-list-item")
-#tag = souped.select("div.watch-sidebar-section.content-wrapper href)" while using it [0]
 all_links = {}
 count = 0
 for tags in tag:
@@ -34,7 +30,8 @@ for tags in tag:
         # if tag.has_attr('href'):
         #         print "The link is %s" %(tag.attrs['href'])
 
-        link = tags.find_all(class_="video-list-item")[0].find(class_='content-wrapper').find_all('a')[0].get('href')
+        link = tags.find_all(class_="video-list-item")[count+1].find(class_='content-wrapper').find_all('a')[count].get('href')
+        print link
         new_link = base1 + link
         all_links = {count:copy.copy(str(new_link))}
 
