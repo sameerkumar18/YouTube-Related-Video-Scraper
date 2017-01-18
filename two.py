@@ -5,7 +5,7 @@ import re
 import copy
 import pafy
 
-url = "https://www.youtube.com/watch?v=7Qp5vcuMIlk"
+url = "__full-YoutTube-Video-Link-(with-https)__"
 base1 = "https://www.youtube.com"
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
