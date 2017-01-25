@@ -4,8 +4,11 @@ This program downloads all the suggested videos of a given video on YouTube....
 
 This program scraps all the suggested links of a given video (url) and asks the user whether he/she wants to download them videos or not
 
-A bit buggy though
 
+================
+Using the Program
+================
+In your command line, type "python youtube.py __URL_of_YT_video_with_https"
 
 
 ================
@@ -22,10 +25,9 @@ Check out the latest development version anonymously with::
 
 To install libraries, run::
 
-	$ pip install requests  
-	$ pip install copy 
+	$ pip install BeautifulSoup  
+	$ pip install requests 
 	$ pip install pafy 
-	$ pip install urllib
 
 -------
 #### Developer
