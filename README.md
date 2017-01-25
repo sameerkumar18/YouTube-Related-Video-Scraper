@@ -8,7 +8,8 @@ This program scraps all the suggested links of a given video (url) and asks the 
 ================
 Using the Program
 ================
-In your command line, type "python youtube.py __URL_of_YT_video_with_https"
+In your command line, type "python youtube.py __URL__"
+*where __URL__ is the full URL of the Youtube Video with https
 
 
 ================
