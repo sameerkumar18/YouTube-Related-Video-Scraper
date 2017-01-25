@@ -1,4 +1,4 @@
-# YouTube-Scraper
+# YouTube-Related-Video-Scraper
 This program downloads all the suggested videos of a given video on YouTube....
 
 
@@ -17,12 +17,12 @@ Getting the code
 ================
 
 
-The code is hosted at https://github.com/sameerkumar18/YouTube-Scraper
+The code is hosted at https://github.com/sameerkumar18/YouTube-Related-Video-Scraper
 
 Check out the latest development version anonymously with::
 
-    $ git clone git://github.com/sameerkumar18/YouTube-Scraper.git
-    $ cd YouTube-Scraper
+    $ git clone git://github.com/sameerkumar18/YouTube-Related-Video-Scraper.git
+    $ cd YouTube-Related-Video-Scraper
 
 To install libraries, run::
 
